@@ -917,7 +917,7 @@
           try {
 
             const res = await axios.post(
-              "https://luqman-auth-andpayment-server.onrender.com/login",
+              "https://luqmanserver-wrqb.onrender.com/login",
               formData,
             );
             console.log(res);
@@ -962,7 +962,7 @@
       verifyBtn.style.opacity = 0.4
       
       try {
-        const response = await axios.post('https://luqman-auth-andpayment-server.onrender.com/verify-login', { username, code })
+        const response = await axios.post('https://luqmanserver-wrqb.onrender.com/verify-login', { username, code })
         console.log(response);
         verificationResponse.textContent = "Successfully signed in!";
         verificationResponse.style.color = "green";
